@@ -1,0 +1,36 @@
+name: mcMMOTrade
+description: Convert mcMMO experience into paper form, allowing it to be traded!
+author: lttf
+version: 1.0
+
+main: com.lttf.mcMMOTrade.Main
+depend: [mcMMO]
+
+commands:
+  exptrade:
+    description: View mcMMOTrade EXP trading menu.
+  leveltrade:
+    description: View mcMMOTrade LEVEL trading menu.
+  mcmmotrade:
+    description: Main command/menu.
+
+permissions:
+  mcMMOTrade.*:
+    description: Gives access to all mcMMOTrade commands!
+    children:
+      ExpTrade.Levels.Admin: true
+      ExpTrade.Levels.User: true
+      ExpTrade.Experience.Admin: true
+      ExpTrade.Experience.User: true
+  mcMMOTrade.Levels.Admin:
+    description: Give access to all mcMMOTrade leveltrade admin commands!
+    default: op
+  mcMMOTrade.Levels.User:
+    description: Gives access to all basic mcMMOTrade leveltrade commands!
+    default: true
+  mcMMOTrade.Experience.Admin:
+    description: Give access to all mcMMOTrade exptrade admin commands!
+    default: op
+  mcMMOTrade.Experience.User:
+    description: Gives access to all basic mcMMOTrade exptrade commands!
+    default: true

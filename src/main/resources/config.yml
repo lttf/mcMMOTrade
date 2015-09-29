@@ -1,0 +1,7 @@
+# mcMMOTrade Configuration File
+# Plugin created by lttf (http://https://github.com/lttf)
+#
+# Enable/Disable either Level or Experience trading.
+enabled:
+  leveltrade: true
+  exptrade: true
